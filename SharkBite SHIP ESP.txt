@@ -1,0 +1,13 @@
+for i,v in pairs(game:GetService("Workspace").BoatWreckage.BoatWreck.BoatWreck:GetDescendants()) do
+if v:IsA("MeshPart") or v:IsA("Part") then
+local esp = Instance.new("BoxHandleAdornment")
+esp.Parent = v
+esp.Name = "Ship"
+esp.Adornee = v
+esp.AlwaysOnTop = true
+esp.ZIndex = 0
+esp.Size = v.Size
+esp.Transparency = 0.3
+esp.Color = BrickColor.new("Lime green")
+end
+end
